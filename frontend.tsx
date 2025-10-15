@@ -1,5 +1,6 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+/** @jsxImportSource react */
+import React from "react";
+import { createRoot } from "react-dom/client";
 import "./styles.css";
 
 // 프로필 데이터
@@ -147,5 +148,5 @@ function Portfolio() {
 }
 
 // Mount to DOM
-const root = ReactDOM.createRoot(document.getElementById("root")!);
+const root = createRoot(document.getElementById("root")!);
 root.render(<Portfolio />);
