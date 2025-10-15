@@ -1,0 +1,10 @@
+# Railway Nixpacks Configuration for Bun
+
+[phases.setup]
+nixPkgs = ["bun"]
+
+[phases.install]
+cmds = ["bun install"]
+
+[start]
+cmd = "bun start"
